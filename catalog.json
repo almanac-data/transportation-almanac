@@ -1,6 +1,6 @@
 {
-  "name": "Example Almanac",
-  "description": "An open, versioned index of public example data.",
+  "name": "Transportation Almanac",
+  "description": "An open, versioned index of public transportation data.",
   "count": 1,
   "by_status": {
     "live": 1
