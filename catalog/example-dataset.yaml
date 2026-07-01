@@ -1,33 +1,36 @@
 id: example-dataset
+type: dataset
 title: Example Dataset (replace this with a real entry)
-description: >
-  A placeholder catalog entry so the index builds and CI passes on a fresh
-  template. Delete this file once you have added your first real dataset.
+description: |
+  A placeholder catalog entry so the index builds and CI passes on a fresh template. Delete this file once you have added your first real dataset.
 publisher: Example Agency
-topics: [example]
+topics:
+- example
 source:
   canonical_url: https://example.org
-  predecessor_url: null
-  doi: null
 access:
-  method: [web]
+  method:
+  - web
   auth_required: false
   auth_note: null
   rate_limit: null
-format: [html]
+format:
+- html
+status: live
+status_since: '2026-06-29'
+status_source: auto
+observed:
+  checked: '2026-06-29'
+  reachable: null
+  http_status: null
+  final_url: null
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: global
-  temporal: "n/a"
+  temporal: n/a
   cadence: static
 license: CC0-1.0
-attribution: "Example Agency"
-archive:
-  wayback_url: null
-  cloud_mirror: null
-  mirror: null
-status: live
-last_checked: "2026-06-29"
-checksum: null
-notes: >
-  This is a template stub. See SETUP.md for how to stand up your own almanac
-  vertical, then replace this entry with real datasets.
+attribution: Example Agency
+notes: |
+  This is a template stub. See SETUP.md for how to stand up your own almanac vertical, then replace this entry with real datasets.
