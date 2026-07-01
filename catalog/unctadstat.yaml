@@ -1,0 +1,45 @@
+id: unctadstat
+type: dataset
+title: UNCTADstat
+description: |
+  UN Trade and Development's statistical database covering maritime transport, merchant fleets, liner shipping connectivity, and freight volumes alongside its broader trade and economy indicators.
+publisher: United Nations Conference on Trade and Development (UNCTAD)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- maritime
+- shipping
+- freight
+- trade
+- global
+source:
+  canonical_url: https://unctadstat.unctad.org/EN/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- xlsx
+status: live
+status_since: '2026-07-01'
+status_source: curator
+observed:
+  checked: '2026-07-01'
+  reachable: true
+  http_status: 200
+  final_url: https://unctadstat.unctad.org/EN/
+  redirect_chain: []
+  fingerprint_result: no-baseline
+coverage:
+  spatial: global (UN member states)
+  temporal: 1980-present (indicator-dependent)
+  cadence: annual
+license: CC-BY-3.0 IGO (UN terms of use)
+attribution: UNCTAD, UNCTADstat
+notes: |
+  Verified reachable this session (HTTP 200). ITF-OECD (International Transport Forum), the other natural international transport-statistics body, returned a Cloudflare bot-challenge on direct fetch — same block class as almanac-template#2. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.
