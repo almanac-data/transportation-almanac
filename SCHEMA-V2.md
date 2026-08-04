@@ -264,11 +264,25 @@ The smallness discipline that kept v1 healthy:
 
 ## Open items before code
 
-1. Generate `schema/catalog-entry.schema.json` v2 from this rationale.
-2. Update `scripts/check_links.py` to populate `observed` (capture `final_url`, redirect chain) and
-   to compute `fingerprint_result` against any baseline.
-3. Teach `scripts/validate.py` the type-conditional soft-warn for `coverage` vs `bibliographic`.
-4. Write `scripts/migrate_v1_v2.py`.
-5. Decide whether the daily job auto-promotes `live` → `revised`/`superseded`/`dark`, or only
+*(Status check 2026-08-04: items 1–4 are shipped. **Item 2 was marked done on 2026-07-22 and
+was not.** `check_links.py` reported status codes and never wrote `observed`, never captured
+`final_url` or a redirect chain, and computed no `fingerprint_result` — so every entry's
+`observed` block kept whatever a human first typed there, indefinitely, while the docs told
+contributors a machine would fill it in. Now shipped for real via `--write-observed`. The
+overstatement is recorded here rather than quietly overwritten, because a status line
+claiming more than shipped is exactly how the gap survived unnoticed. Only item 5 remains
+genuinely open.)*
+
+1. ~~Generate `schema/catalog-entry.schema.json` v2 from this rationale.~~ **Done.**
+2. ~~Update `scripts/check_links.py` to populate `observed` (capture `final_url`, redirect chain) and
+   to compute `fingerprint_result` against any baseline.~~ **Done** (2026-08-04) — via
+   `--write-observed`, opt-in so the default stays read-only. `fingerprint_result` is computed
+   only where a `fingerprint.sha256` baseline exists, so the body is fetched and hashed only
+   when there is something to compare it against; absent a baseline it records `no-baseline`,
+   and where the artifact could not be fetched whole the existing value is left untouched
+   rather than a `drift` manufactured from a partial read.
+3. ~~Teach `scripts/validate.py` the type-conditional soft-warn for `coverage` vs `bibliographic`.~~ **Done.**
+4. ~~Write `scripts/migrate_v1_v2.py`.~~ **Done.**
+5. **Still open:** decide whether the daily job auto-promotes `live` → `revised`/`superseded`/`dark`, or only
    *proposes* a status change via issue for curator confirmation (leaning: propose, never auto-write
    a lifecycle label — `status_source` stays `curator` for anything but the cleanest cases).
