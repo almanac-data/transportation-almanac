@@ -1,11 +1,112 @@
 {
   "name": "Transportation Almanac",
   "description": "An open, versioned index of public transportation data.",
-  "count": 2,
+  "count": 5,
   "by_status": {
-    "live": 2
+    "live": 5
   },
   "entries": [
+    {
+      "id": "bts-airline-on-time-statistics",
+      "type": "dataset",
+      "title": "BTS Airline On-Time Performance Statistics",
+      "description": "Flight-level on-time arrival and departure, delay cause, cancellation, and diversion data reported by large U.S. air carriers, published by the Bureau of Transportation Statistics through TranStats.\n",
+      "publisher": "U.S. Department of Transportation, Bureau of Transportation Statistics (BTS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "aviation",
+        "airlines",
+        "on-time-performance",
+        "delays"
+      ],
+      "source": {
+        "canonical_url": "https://www.transtats.bts.gov/ontime/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (domestic flights of reporting carriers)",
+        "temporal": "January 1995 through August 2026 (as stated on the page)",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "Bureau of Transportation Statistics, Airline On-Time Statistics",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page states \"Data are available from January 1995 through August 2026\" and documents carrier merger reporting changes. Three things come from TranStats' usual practice and weren't checked here: flight-level detail, the monthly cadence, and CSV downloads. TranStats (https://www.transtats.bts.gov/) is reachable, but several www.bts.gov pages, such as the Freight Analysis Framework, returned Access Denied to both curl and headless Chromium this session.\n"
+    },
+    {
+      "id": "fhwa-highway-statistics-series",
+      "type": "dataset",
+      "title": "FHWA Highway Statistics Series",
+      "description": "The Federal Highway Administration's annual reports of analyzed statistics on motor fuel, motor vehicle registrations, driver licenses, highway user taxation, highway mileage, travel, and highway finance, published since 1945.\n",
+      "publisher": "U.S. Department of Transportation, Federal Highway Administration (FHWA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "highways",
+        "vehicle-registrations",
+        "motor-fuel",
+        "highway-finance",
+        "vmt"
+      ],
+      "source": {
+        "canonical_url": "https://www.fhwa.dot.gov/policyinformation/statistics.cfm"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "html",
+        "pdf"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national and state level)",
+        "temporal": "1945-present (online editions through Highway Statistics 2024)",
+        "cadence": "annual"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "Federal Highway Administration, Highway Statistics Series",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page describes \"annual reports containing analyzed statistical information on motor fuel, motor vehicle registrations, driver licenses, highway user taxation, highway mileage, travel, and highway finance\", says it has \"been published annually since 1945\", and lists editions through Highway Statistics 2024. The table formats are assumed and weren't checked.\n"
+    },
     {
       "id": "fra-safety-data",
       "type": "dataset",
@@ -55,6 +156,55 @@
       "license": "public-domain (US Gov work)",
       "attribution": "Federal Railroad Administration, Office of Railroad Safety",
       "notes": "Human-verified 2026-10-31: HTTP 200 (\"Last update: Friday, October 30, 2026\"). The page announces a new FRA safety data page, released in December 2024, with \"reports, full datasets, and PDF reports for train accident, highway-rail crossing incident, highway-rail crossing inventory, casualty, and operational data\". It lists Full Datasets and Data Downloads for each category. The FRA main site (railroads.dot.gov) returned 403 to curl. The monthly cadence and the csv format are assumed and weren't checked. A steward may want to repoint canonical_url to the new safety data page.\n"
+    },
+    {
+      "id": "ntsb-aviation-accident-database",
+      "type": "dataset",
+      "title": "NTSB Aviation Accident Database",
+      "description": "The National Transportation Safety Board's database of civil aviation accidents and selected incidents in the United States, its territories, and international waters since 1962, including foreign investigations the NTSB took part in.\n",
+      "publisher": "U.S. National Transportation Safety Board (NTSB)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "aviation-safety",
+        "accidents",
+        "investigations"
+      ],
+      "source": {
+        "canonical_url": "https://www.ntsb.gov/Pages/AviationQueryV2.aspx"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "mdb"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States, territories and possessions, and international waters",
+        "temporal": "1962-present",
+        "cadence": "event"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "National Transportation Safety Board, Aviation Accident Database",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page says \"The NTSB aviation accident database contains civil aviation accidents and selected incidents that occurred from 1962 to present within the United States, its territories and possessions, and in international waters.\" NTSB's newer CAROL search lives at data.ntsb.gov, which redirects to my.ntsb.gov/basic. The download formats are assumed from NTSB's usual distribution and weren't checked. Records are added as investigations progress, so cadence is event.\n"
     },
     {
       "id": "unctadstat",
