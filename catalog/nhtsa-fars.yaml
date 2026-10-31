@@ -1,0 +1,43 @@
+id: nhtsa-fars
+type: dataset
+title: NHTSA Fatality Analysis Reporting System (FARS)
+description: |
+  A nationwide census of fatal U.S. motor vehicle crashes: every crash on a public trafficway resulting in a death within 30 days, with more than 100 coded data elements describing the crash, vehicles, and people involved.
+publisher: U.S. Department of Transportation, National Highway Traffic Safety Administration (NHTSA)
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- traffic-safety
+- crashes
+- fatalities
+- vehicles
+source:
+  canonical_url: https://datahub.transportation.gov/d/mzrg-xkip
+access:
+  method:
+  - web
+  - bulk
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- sas
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (50 states, DC, Puerto Rico)
+  temporal: 1975-present
+  cadence: annual
+license: public-domain (US Gov work)
+attribution: National Highway Traffic Safety Administration, Fatality Analysis Reporting System (FARS)
+notes: |
+  Human-verified 2026-10-31 in headless Chromium on the DOT DataHub. The URL redirects to /Automobiles/Fatality-Analysis-Reporting-System-FARS-/mzrg-xkip/about_data. The page describes a crash qualifying when it "must involve a motor vehicle traveling a traffic-way customarily open to the public and resulting in the death of a person ... within 30 days", and "Each crash has more than 100 coded data elements". DOT DataHub also lists a FARS online query tool (d/vzqv-j5g4) and FTP raw data (d/kcpj-k9k9). NHTSA's own FARS page (www.nhtsa.gov) returned Access Denied to curl and headless Chromium this session, which is why this entry points at DataHub. Not checked: the 1975 start year, the Puerto Rico coverage, and the formats.
