@@ -1,11 +1,61 @@
 {
   "name": "Transportation Almanac",
   "description": "An open, versioned index of public transportation data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
+    {
+      "id": "uk-dft-road-traffic-statistics",
+      "type": "dataset",
+      "title": "UK Road Traffic Statistics (Department for Transport)",
+      "description": "The Department for Transport's road traffic estimates for Great Britain — vehicle miles by vehicle type and road class, and street-level annual average daily flows and raw counts at count points — with downloads and an API.\n",
+      "publisher": "Department for Transport (DfT), United Kingdom",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "GB"
+      },
+      "topics": [
+        "road-traffic",
+        "traffic-counts",
+        "vehicle-miles",
+        "great-britain"
+      ],
+      "source": {
+        "canonical_url": "https://roadtraffic.dft.gov.uk/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Great Britain (regions, local authorities, count points)",
+        "temporal": "1993-present (national time series shown on the site)",
+        "cadence": "annual"
+      },
+      "license": "OGL-UK-3.0 (Open Government Licence v3.0, except where otherwise stated)",
+      "attribution": "Department for Transport, Road traffic statistics",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page shows a national time series back to 1993 and offers downloads of \"street-level traffic figures for all regions, local authorities and count point locations\", including annual average daily flow (overall and by direction) and raw counts. It links an API and states \"All content is available under the Open Government Licence v3.0, except where otherwise stated\". Coverage is Great Britain, not Northern Ireland. Two things come from DfT's usual practice and weren't checked: the annual cadence and the csv format. The DfT publisher name is taken from the service's own branding.\n"
+    },
     {
       "id": "unctadstat",
       "type": "dataset",
