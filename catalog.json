@@ -1,9 +1,9 @@
 {
   "name": "Transportation Almanac",
   "description": "An open, versioned index of public transportation data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
     {
@@ -58,6 +58,57 @@
       "license": "CC-BY-3.0 IGO (UN terms of use)",
       "attribution": "UNCTAD, UNCTADstat",
       "notes": "Verified reachable this session (HTTP 200). ITF-OECD (International Transport Forum), the other natural international transport-statistics body, returned a Cloudflare bot-challenge on direct fetch — same block class as almanac-template#2. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.\n"
+    },
+    {
+      "id": "us-dot-open-data-portal",
+      "type": "dataset",
+      "title": "U.S. DOT Open Data Portal (data.transportation.gov)",
+      "description": "The Department of Transportation's open data catalog, hosting datasets from DOT operating administrations — border crossings, vehicle recalls, safety, and more — with Socrata-based APIs and downloads.\n",
+      "publisher": "U.S. Department of Transportation",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "open-data-portal",
+        "safety",
+        "recalls",
+        "border-crossings"
+      ],
+      "source": {
+        "canonical_url": "https://data.transportation.gov/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States",
+        "temporal": "varies by dataset",
+        "cadence": "event"
+      },
+      "license": "public-domain (US Gov work), dataset-dependent",
+      "attribution": "U.S. Department of Transportation, data.transportation.gov",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page shows featured datasets (border crossing data, Takata recall priority groups) and links to the Socrata Terms of Use. It is a portal, not one dataset, so it's cataloged as a gateway; individual DOT datasets deserve their own entries. Some DOT bureau sites returned Access Denied to both curl and headless Chromium this session (NHTSA FARS, the FTA National Transit Database, BTS freight pages), and this portal may be the most reliable programmatic route to some of their data. The license is marked dataset-dependent because individual datasets can carry their own terms.\n"
     }
   ]
 }
