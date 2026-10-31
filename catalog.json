@@ -1,9 +1,9 @@
 {
   "name": "Transportation Almanac",
   "description": "An open, versioned index of public transportation data.",
-  "count": 6,
+  "count": 7,
   "by_status": {
-    "live": 6
+    "live": 7
   },
   "entries": [
     {
@@ -54,6 +54,59 @@
       "license": "public-domain (US Gov work)",
       "attribution": "Bureau of Transportation Statistics, Airline On-Time Statistics",
       "notes": "Human-verified 2026-10-31: HTTP 200. The page states \"Data are available from January 1995 through August 2026\" and documents carrier merger reporting changes. Three things come from TranStats' usual practice and weren't checked here: flight-level detail, the monthly cadence, and CSV downloads. TranStats (https://www.transtats.bts.gov/) is reachable, but several www.bts.gov pages, such as the Freight Analysis Framework, returned Access Denied to both curl and headless Chromium this session.\n"
+    },
+    {
+      "id": "eurostat-transport-database",
+      "type": "dataset",
+      "title": "Eurostat Transport Database",
+      "description": "Eurostat's official EU transport statistics — road, rail, air, maritime, and inland waterway transport of passengers and goods, transport infrastructure and equipment, and road safety — harmonised across EU member states.\n",
+      "publisher": "Eurostat (European Commission)",
+      "jurisdiction": {
+        "scope": "regional-bloc",
+        "country": null
+      },
+      "topics": [
+        "freight",
+        "passenger-transport",
+        "road-safety",
+        "europe"
+      ],
+      "source": {
+        "canonical_url": "https://ec.europa.eu/eurostat/web/transport/database"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "tsv",
+        "xlsx",
+        "sdmx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "EU member states (plus some EFTA and candidate countries)",
+        "temporal": "varies by dataset",
+        "cadence": "irregular"
+      },
+      "license": "CC-BY-4.0 (Eurostat copyright notice and free re-use of data)",
+      "attribution": "Eurostat",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (page title \"Database - Transport - Eurostat\"). Eurostat's copyright notice (https://ec.europa.eu/eurostat/help/copyright-notice) licenses its content under CC BY 4.0. Transport tables range from quarterly to annual, so cadence is recorded as irregular for the collection. The modes in the description reflect Eurostat's usual transport tables and weren't checked dataset by dataset.\n"
     },
     {
       "id": "fhwa-highway-statistics-series",
