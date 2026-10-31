@@ -1,9 +1,9 @@
 {
   "name": "Transportation Almanac",
   "description": "An open, versioned index of public transportation data.",
-  "count": 2,
+  "count": 3,
   "by_status": {
-    "live": 2
+    "live": 3
   },
   "entries": [
     {
@@ -54,6 +54,58 @@
       "license": "public-domain (US Gov work)",
       "attribution": "Bureau of Transportation Statistics, Airline On-Time Statistics",
       "notes": "Human-verified 2026-10-31: HTTP 200. The page states \"Data are available from January 1995 through August 2026\" and documents carrier merger reporting changes. Three things come from TranStats' usual practice and weren't checked here: flight-level detail, the monthly cadence, and CSV downloads. TranStats (https://www.transtats.bts.gov/) is reachable, but several www.bts.gov pages, such as the Freight Analysis Framework, returned Access Denied to both curl and headless Chromium this session.\n"
+    },
+    {
+      "id": "fhwa-highway-statistics-series",
+      "type": "dataset",
+      "title": "FHWA Highway Statistics Series",
+      "description": "The Federal Highway Administration's annual reports of analyzed statistics on motor fuel, motor vehicle registrations, driver licenses, highway user taxation, highway mileage, travel, and highway finance, published since 1945.\n",
+      "publisher": "U.S. Department of Transportation, Federal Highway Administration (FHWA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "highways",
+        "vehicle-registrations",
+        "motor-fuel",
+        "highway-finance",
+        "vmt"
+      ],
+      "source": {
+        "canonical_url": "https://www.fhwa.dot.gov/policyinformation/statistics.cfm"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "html",
+        "pdf"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national and state level)",
+        "temporal": "1945-present (online editions through Highway Statistics 2024)",
+        "cadence": "annual"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "Federal Highway Administration, Highway Statistics Series",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page describes \"annual reports containing analyzed statistical information on motor fuel, motor vehicle registrations, driver licenses, highway user taxation, highway mileage, travel, and highway finance\", says it has \"been published annually since 1945\", and lists editions through Highway Statistics 2024. The table formats are assumed and weren't checked.\n"
     },
     {
       "id": "unctadstat",
