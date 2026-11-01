@@ -1,9 +1,9 @@
 {
   "name": "Transportation Almanac",
   "description": "An open, versioned index of public transportation data.",
-  "count": 9,
+  "count": 10,
   "by_status": {
-    "live": 9
+    "live": 10
   },
   "entries": [
     {
@@ -54,6 +54,54 @@
       "license": "public-domain (US Gov work)",
       "attribution": "Bureau of Transportation Statistics, Airline On-Time Statistics",
       "notes": "Human-verified 2026-10-31: HTTP 200. The page states \"Data are available from January 1995 through August 2026\" and documents carrier merger reporting changes. Three things come from TranStats' usual practice and weren't checked here: flight-level detail, the monthly cadence, and CSV downloads. TranStats (https://www.transtats.bts.gov/) is reachable, but several www.bts.gov pages, such as the Freight Analysis Framework, returned Access Denied to both curl and headless Chromium this session.\n"
+    },
+    {
+      "id": "eurocontrol-aviation-data-repository-research",
+      "type": "dataset",
+      "title": "EUROCONTROL Aviation Data Repository for Research (ADRR)",
+      "description": "EUROCONTROL's archive of detailed European air-traffic data for research: flight details, planned and actual flight trajectories, airspace structure and route network information for commercial flights operating in and over Europe. Free after registration, for research and development use only.\n",
+      "publisher": "EUROCONTROL (European Organisation for the Safety of Air Navigation)",
+      "jurisdiction": {
+        "scope": "regional-bloc",
+        "country": null
+      },
+      "topics": [
+        "aviation",
+        "flights",
+        "trajectories",
+        "airspace",
+        "europe"
+      ],
+      "source": {
+        "canonical_url": "https://www.eurocontrol.int/dashboard/aviation-data-research"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": true,
+        "auth_note": "Free OneSky Online account (academic or professional email), then a vetted subscription request to the ADRR tool, and individual acceptance of the ADRR Terms of Use",
+        "rate_limit": null
+      },
+      "format": [],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Europe (commercial flights operating in and over Europe)",
+        "temporal": "2015-2025 (complete by January 2027, per EUROCONTROL), with a 12-month release delay",
+        "cadence": "monthly"
+      },
+      "license": "EUROCONTROL ADRR Terms of Use (free, research and development use only; no commercial use, no redistribution or public display; signed by each user)",
+      "attribution": "\"This document/R&D product has been created with or contains elements of Aviation Data Repository for Research made available by EUROCONTROL.\" (legend required by the Terms of Use, Article 6)",
+      "notes": "Human-verified 2026-11-01: HTTP 200. The issue's URL, https://www.eurocontrol.int/dashboard/rnd-data-archive, redirects to https://www.eurocontrol.int/dashboard/aviation-data-research, which is catalogued here. The page reads \"Aviation Data Repository for Research (ADRR)\", \"A huge archive of real-life, quality data\", and offers \"detailed flight information, flight trajectories (planned and actual), airspace structure, and route network information\". It announces the move from 4 to 12 months of coverage a year and a release delay cut \"from 24 to 12 months. From October 2026, the ADRR provides access to more than 100 million flight records, and by January 2027 will be covering every month from 2015 to 2025.\" A structure guide and sample dataset are dated 14 October 2026. Access: \"The ADRR tool is open for all R&D use\", via registration with OneSky Online, a subscription request that \"will be vetted\", then downloading, which is \"simple (and free)\". EUROCONTROL is an intergovernmental organisation, not an EU body; regional-bloc is the closest scope in the schema. The page also points to EUROCONTROL's general public data (https://www.eurocontrol.int/our-data, ansperformance.eu), which is not covered by this entry. File formats weren't checked (no account was used), so format is empty, and the monthly cadence is inferred from the \"nearly one million flights per month\" expansion.\nLicence checked 2026-11-01: the ADRR Terms of Use PDF (https://www.eurocontrol.int/sites/default/files/2025-04/eurocontol-aviation-data-repository-research-terms-of-use.pdf, FNI Doc24 v11 April 2025) grant \"a non-exclusive, restricted, fully paid-up, royalty-free, revocable, non-sublicenseable, and non-transferable right to use\" the ADRR \"exclusively for R&D purposes\". Users \"shall not share or distribute the Aviation Data Repository for Research\", shall not \"display\" it on any public site, and shall not \"use the Aviation Data Repository for Research for commercial purposes\". The data \"are provided free of charge\". Note that the Terms of Use still describe \"four non-consecutive calendar months each year\", which predates the 12-month expansion announced on the page.\n"
     },
     {
       "id": "eurostat-transport-database",
