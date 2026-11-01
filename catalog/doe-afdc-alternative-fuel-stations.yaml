@@ -1,0 +1,44 @@
+id: doe-afdc-alternative-fuel-stations
+type: dataset
+title: DOE Alternative Fuels Data Center — Alternative Fuel Stations Data
+description: |
+  The U.S. Department of Energy's database of public and private alternative fuel stations in the United States and Canada (EV charging, biodiesel, CNG, E85, hydrogen, LNG, propane, renewable diesel). It powers the AFDC Station Locator and is offered as a bulk download and through an API, with historical station data.
+publisher: U.S. Department of Energy, Alternative Fuels Data Center (data provided by the National Laboratory of the Rockies, NLR)
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- ev-charging
+- alternative-fuels
+- stations
+- vehicles
+source:
+  canonical_url: https://afdc.energy.gov/data_download
+access:
+  method:
+  - web
+  - bulk
+  - api
+  auth_required: true
+  auth_note: Bulk download asks for name and email and acceptance of the terms (no account); the API (developer.nlr.gov) needs a free API key (DEMO_KEY works for light use)
+  rate_limit: null
+format:
+- csv
+- json
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States and Canada
+  temporal: current station list, plus a historical stations download (start year not checked)
+  cadence: daily
+license: AFDC Data Download Terms and Conditions (Data "may be used for any purpose whatsoever"; no endorsement use of DOE/NLR names; user indemnifies DOE/NLR)
+attribution: U.S. Department of Energy, Alternative Fuels Data Center, Alternative Fuel Stations data
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). The page reads "To download data related to alternative fuels and advanced vehicles, follow the steps below". The dataset choices are "Alternative fuel stations", "Laws and incentives" and "Medium- and heavy-duty vehicles", with a historical stations format page; downloads require first name, last name and email, and ticking "I have read and agree to the terms and conditions". The stations field list (https://afdc.energy.gov/data_download/alt_fuel_stations_format) covers fuel_type_code (BD, CNG, ELEC, E85, HY, LNG, LPG, RD), address fields and U.S. state or "Canadian province/territory". The Developer APIs link goes to https://developer.nlr.gov/docs/transportation/alt-fuel-stations-v1/, where the API "powers the Alternative Fueling Station Locator". A DEMO_KEY call returned station_counts total 313020 (ELEC 299913 ports at 91095 stations). The last-updated endpoint returned 2026-11-01T01:52:04Z, which is the basis for "daily". The bulk file format (CSV assumed) wasn't downloaded, and API rate limits weren't checked.
+  Licence checked 2026-11-01: the "Data Download Terms and Conditions" on https://afdc.energy.gov/data_download (terms modal) say "These data and software code ("Data") are provided by the National Laboratory of the Rockies ("NLR"), which is operated by the Alliance for Energy Innovation, LLC ("Alliance"), for the U.S. Department of Energy ("DOE"), and may be used for any purpose whatsoever." DOE/NLR/Alliance names may not be used to endorse or promote, and users "AGREE TO INDEMNIFY DOE/NLR/ALLIANCE". The data are produced by a contractor-operated laboratory, so the entry quotes these terms rather than calling them a US Gov public-domain work.
