@@ -1,9 +1,9 @@
 {
   "name": "Transportation Almanac",
   "description": "An open, versioned index of public transportation data.",
-  "count": 14,
+  "count": 15,
   "by_status": {
-    "live": 14
+    "live": 15
   },
   "entries": [
     {
@@ -105,6 +105,54 @@
       "license": "public-domain (US Gov work; DOT DataHub lists FAF as \"Public Domain U.S. Government\")",
       "attribution": "Bureau of Transportation Statistics and Federal Highway Administration, Freight Analysis Framework Version 5 (FAF5)",
       "notes": "Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium) on faf.ornl.gov. The issue's URL, https://www.bts.gov/faf, still returned Akamai \"Access Denied\" (HTTP 403) to curl and headless Chromium. This entry points at the FAF5 data site, which the page credits to BTS and FHWA, with ORNL listed as the developer. It says \"The FAF is produced by the Bureau of Transportation Statistics (BTS) with support from the Federal Highway Administration (FHWA)\", and \"The current version of FAF5 (FAF5.7.1) provides estimates for tonnage (unit: thousand tons), value (unit: million dollars), and ton-miles ... for the base year (2017), the recent years (2018 - 2024), the forecast year estimates (2030 - 2050), and the state level historical trend estimates (1997-2012)\". Downloads are zipped regional and state databases (FAF5.7.1.zip and FAF5.7.1_access.zip, the latter presumably Access databases), plus a Data Tabulation Tool, metadata and a FAF zones shapefile. The files were not downloaded, so the CSV/Access formats are inferred from the file names.\nLicence checked 2026-11-01: DOT's own open data catalog lists \"Freight Analysis Framework\" (https://data.transportation.gov/d/6tex-3tzx, attribution \"FHWA, Office of Freight Management and Operations\") with licence \"Public Domain U.S. Government\" (terms link https://www.usa.gov/government-works). No licence statement appears on faf.ornl.gov itself, and BTS's own FAF page could not be read, so this is catalog metadata rather than a terms page (medium confidence). Also in the issue: BTS's NTAD, which has its own entry, bts-ntad.\n"
+    },
+    {
+      "id": "bts-ntad",
+      "type": "dataset",
+      "title": "BTS National Transportation Atlas Database (NTAD)",
+      "description": "The National Transportation Atlas Database is BTS's collection of national geospatial datasets: transportation facilities and networks for every mode (aviation, maritime, rail, roads, transit), flows over those networks, and related boundary, energy, environment, performance and safety layers. Each dataset is offered as a download and as a web service.\n",
+      "publisher": "U.S. Department of Transportation, Bureau of Transportation Statistics (BTS), with other DOT operating administrations",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "geospatial",
+        "transportation-networks",
+        "infrastructure",
+        "freight"
+      ],
+      "source": {
+        "canonical_url": "https://geodata.bts.gov/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States",
+        "temporal": "varies by dataset (archived data available)",
+        "cadence": "irregular"
+      },
+      "license": "public-domain (US Gov work; NTAD dataset licence statement), with a few datasets under CC-BY-3.0 or CC-BY-NC-4.0, so check each dataset",
+      "attribution": "Bureau of Transportation Statistics, National Transportation Atlas Database (NTAD)",
+      "notes": "Human-verified 2026-11-01: HTTP 200 (curl; read in headless Chromium, as it is an ArcGIS Hub app). https://www.bts.gov/ntad returned Akamai \"Access Denied\" (HTTP 403). The geodata.bts.gov page reads \"The NTAD is a collection of national geospatial datasets of modal and intermodal transportation facilities and networks; flows of people, goods, vehicles, and craft over the transportation networks across all modes\". It offers \"Find Data by Mode\" (Aviation, Maritime, Rail, Roads, Transit), categories, Archived Data, \"Download Data\" and \"Web Services\". Its DCAT-US feed (https://geodata.bts.gov/api/feed/dcat-us/1.1.json) answered HTTP 200 with 142 datasets, the most recent modified 2026-10-31. The most frequent publishers are BTS (38), FHWA (25) and FRA (17). Formats vary by dataset and weren't checked.\nLicence checked 2026-11-01: in the DCAT feed, 122 of the 142 datasets carry the licence \"This NTAD dataset is a work of the United States government as defined in 17 U.S.C. § 101 and as such are not protected by any U.S. copyrights. This work is available for unrestricted public use.\" Three are \"Creative Commons Attribution 3.0 United States (CC-BY-3.0)\" and two are \"CC-BY-NC 4.0\". The rest carry Census TIGER/Line notices or disclaimers.\n"
     },
     {
       "id": "doe-afdc-alternative-fuel-stations",
