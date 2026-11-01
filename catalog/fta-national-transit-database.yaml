@@ -1,0 +1,44 @@
+id: fta-national-transit-database
+type: dataset
+title: FTA National Transit Database (NTD)
+description: |
+  The Federal Transit Administration's National Transit Database: ridership, service, operating and capital expenses, funding sources, fares, vehicles and energy, stations, facilities, track and employees reported by U.S. transit agencies, with monthly ridership and annual data tables. This entry points at the NTD datasets FTA publishes on DOT's open data portal.
+publisher: U.S. Department of Transportation, Federal Transit Administration (FTA)
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- transit
+- ridership
+- agency-level
+- transit-finance
+source:
+  canonical_url: https://data.transportation.gov/browse?category=Public+Transit&q=NTD
+access:
+  method:
+  - web
+  - api
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- json
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (transit agencies reporting to the NTD)
+  temporal: varies by table (monthly ridership; annual tables for report years 2022-2025 and earlier summaries)
+  cadence: monthly
+license: public-domain (US Gov work; DOT DataHub licence "Public Domain U.S. Government")
+attribution: Federal Transit Administration, National Transit Database
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl; the catalog page was read in headless Chromium). FTA's own NTD page, https://www.transit.dot.gov/ntd, still returned Akamai "Access Denied" (HTTP 403) to curl and headless Chromium. Following the workaround in the issue, this entry points at the DOT DataHub catalog search for NTD in the Public Transit category, which showed "149 results". The search URL may be less stable than a single dataset page. Through the Socrata catalog API, the most recently updated ones are "2025 NTD Annual Data - Demand Response Geographic Area Coverage" (2026-10-29), a set of 2025 annual summaries (service, metrics, funding sources, capital expenses, vehicles and energy; mid-October 2026), and "Complete Monthly Ridership (with Adjustments and Estimates)" (https://data.transportation.gov/d/8bui-9xvu, updated 2026-10-01). Dataset descriptions say they are based on the database files "on NTD Program website, at https://transit.dot.gov/ntd/ntd-data". The parent portal is catalogued separately as us-dot-open-data-portal. Formats are the standard Socrata exports and weren't tested.
+  Licence checked 2026-11-01: DOT DataHub metadata for the NTD datasets (for example, 8bui-9xvu) gives licence "Public Domain U.S. Government" with terms link https://www.usa.gov/government-works and attribution "Federal Transit Administration". A few NTD tables (for example, "2025 NTD Annual Data Summary - Transit Passenger Fares") have no licence set in the catalog.
