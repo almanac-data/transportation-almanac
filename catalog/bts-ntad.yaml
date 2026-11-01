@@ -1,0 +1,42 @@
+id: bts-ntad
+type: dataset
+title: BTS National Transportation Atlas Database (NTAD)
+description: |
+  The National Transportation Atlas Database is BTS's collection of national geospatial datasets: transportation facilities and networks for every mode (aviation, maritime, rail, roads, transit), flows over those networks, and related boundary, energy, environment, performance and safety layers. Each dataset is offered as a download and as a web service.
+publisher: U.S. Department of Transportation, Bureau of Transportation Statistics (BTS), with other DOT operating administrations
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- geospatial
+- transportation-networks
+- infrastructure
+- freight
+source:
+  canonical_url: https://geodata.bts.gov/
+access:
+  method:
+  - web
+  - bulk
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format: []
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States
+  temporal: varies by dataset (archived data available)
+  cadence: irregular
+license: public-domain (US Gov work; NTAD dataset licence statement), with a few datasets under CC-BY-3.0 or CC-BY-NC-4.0, so check each dataset
+attribution: Bureau of Transportation Statistics, National Transportation Atlas Database (NTAD)
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl; read in headless Chromium, as it is an ArcGIS Hub app). https://www.bts.gov/ntad returned Akamai "Access Denied" (HTTP 403). The geodata.bts.gov page reads "The NTAD is a collection of national geospatial datasets of modal and intermodal transportation facilities and networks; flows of people, goods, vehicles, and craft over the transportation networks across all modes". It offers "Find Data by Mode" (Aviation, Maritime, Rail, Roads, Transit), categories, Archived Data, "Download Data" and "Web Services". Its DCAT-US feed (https://geodata.bts.gov/api/feed/dcat-us/1.1.json) answered HTTP 200 with 142 datasets, the most recent modified 2026-10-31. The most frequent publishers are BTS (38), FHWA (25) and FRA (17). Formats vary by dataset and weren't checked.
+  Licence checked 2026-11-01: in the DCAT feed, 122 of the 142 datasets carry the licence "This NTAD dataset is a work of the United States government as defined in 17 U.S.C. § 101 and as such are not protected by any U.S. copyrights. This work is available for unrestricted public use." Three are "Creative Commons Attribution 3.0 United States (CC-BY-3.0)" and two are "CC-BY-NC 4.0". The rest carry Census TIGER/Line notices or disclaimers.
