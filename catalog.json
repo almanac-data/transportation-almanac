@@ -1,9 +1,9 @@
 {
   "name": "Transportation Almanac",
   "description": "An open, versioned index of public transportation data.",
-  "count": 12,
+  "count": 13,
   "by_status": {
-    "live": 12
+    "live": 13
   },
   "entries": [
     {
@@ -562,6 +562,57 @@
       "license": "CC-BY-3.0 IGO (UN terms of use)",
       "attribution": "UNCTAD, UNCTADstat",
       "notes": "Verified reachable this session (HTTP 200). ITF-OECD (International Transport Forum), the other natural international transport-statistics body, returned a Cloudflare bot-challenge on direct fetch — same block class as almanac-template#2. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.\n"
+    },
+    {
+      "id": "unece-transport-statistics-database",
+      "type": "dataset",
+      "title": "UNECE Transport Statistics Database",
+      "description": "The UN Economic Commission for Europe's transport tables in its statistical database: road safety (fatalities, injuries and accidents by many breakdowns), road traffic, road vehicle fleet, rail traffic and vehicles, inland waterway traffic and vessels, oil pipeline transport and transport infrastructure across the UNECE region.\n",
+      "publisher": "United Nations Economic Commission for Europe (UNECE), Statistical Division",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
+      "topics": [
+        "transport",
+        "road-safety",
+        "rail",
+        "inland-waterways",
+        "international"
+      ],
+      "source": {
+        "canonical_url": "https://w3.unece.org/PXWeb2015/pxweb/en/STAT/STAT__40-TRTRANS/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "px",
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "UNECE member states (Europe, North America, Central Asia, Caucasus; 56 countries in the road safety tables)",
+        "temporal": "varies by table",
+        "cadence": "annual"
+      },
+      "license": "UNECE Statistical Database terms of use (free to copy, reproduce and redistribute for commercial and non-commercial purposes, provided UNECE is acknowledged as the source)",
+      "attribution": "UNECE Statistical Database",
+      "notes": "Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). The issue's URL, https://unece.org/transport/statistics, returned a Cloudflare block (\"Sorry, you have been blocked\") to curl and headless Chromium. This entry catalogues the UNECE Statistical Database on w3.unece.org, which the UNECE Data Portal (https://w3.unece.org/PXWeb/en) links as \"Transport data tables\". The Transport folder lists Inland waterway traffic, Inland waterway vessels, Oil pipeline transport, \"Railway employment (discontinued)\", \"Railway safety (discontinued)\", Railway traffic, Railway vehicles, Road safety, Road traffic, Road vehicle fleet and Transport infrastructure. The PXWeb API (https://w3.unece.org/PXWeb2015/api/v1/en/STAT/40-TRTRANS) answered with JSON. The road safety tables show updated 2026-10-20, and \"Road traffic fatalities and injuries, rate per million inhabitants...\" covers 56 countries. The portal banner says \"Economic statistics indicators have not been updated since 1 May 2026 due to database restructuring\", which refers to the economic tables, not transport. The About page says the data \"are compiled by the Statistical Division from a range of official national and international sources\". The portal also links a transport statistics infocard and city-level public transport data (stats.unece.org), which weren't checked. Download formats beyond PX and the JSON API weren't tested.\nLicence checked 2026-11-01: the database's \"Copyright notice and terms of use\" (https://w3.unece.org/PXWeb/Static/Copyright_notice.html) reads \"Copyright © United Nations. All rights reserved. The data in the UNECE Statistical Database are available free of charge. Users are free to copy, reproduce and redistribute the data for both commercial and non-commercial purposes, provided UNECE is acknowledged as the source.\"\n"
     },
     {
       "id": "us-dot-open-data-portal",
