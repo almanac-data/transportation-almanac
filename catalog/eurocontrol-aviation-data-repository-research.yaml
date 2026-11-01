@@ -28,9 +28,11 @@ status_since: '2026-11-01'
 status_source: curator
 observed:
   checked: '2026-11-01'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 200
+  final_url: https://www.eurocontrol.int/dashboard/aviation-data-research
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: Europe (commercial flights operating in and over Europe)
   temporal: 2015-2025 (complete by January 2027, per EUROCONTROL), with a 12-month release delay
