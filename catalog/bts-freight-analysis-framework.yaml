@@ -1,0 +1,44 @@
+id: bts-freight-analysis-framework
+type: dataset
+title: BTS/FHWA Freight Analysis Framework (FAF5)
+description: |
+  The Freight Analysis Framework estimates U.S. freight movement among states and major metropolitan areas by all modes: tonnage, value and ton-miles by origin-destination region, commodity and mode, for a 2017 base year, recent years, forecasts to 2050 and state-level historical trends. It is built from the Commodity Flow Survey and Census international trade data, among other sources.
+publisher: U.S. Department of Transportation, Bureau of Transportation Statistics (BTS), with the Federal Highway Administration (FHWA); data site developed by Oak Ridge National Laboratory
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- freight
+- commodity-flows
+- forecasts
+- geospatial
+source:
+  canonical_url: https://faf.ornl.gov/faf5/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- accdb
+- shapefile
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (FAF regions and states; flows to and from foreign regions)
+  temporal: 2017 base year, 2018-2024 annual estimates, 2030-2050 forecasts, 1997-2012 state historical series
+  cadence: annual
+license: public-domain (US Gov work; DOT DataHub lists FAF as "Public Domain U.S. Government")
+attribution: Bureau of Transportation Statistics and Federal Highway Administration, Freight Analysis Framework Version 5 (FAF5)
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium) on faf.ornl.gov. The issue's URL, https://www.bts.gov/faf, still returned Akamai "Access Denied" (HTTP 403) to curl and headless Chromium. This entry points at the FAF5 data site, which the page credits to BTS and FHWA, with ORNL listed as the developer. It says "The FAF is produced by the Bureau of Transportation Statistics (BTS) with support from the Federal Highway Administration (FHWA)", and "The current version of FAF5 (FAF5.7.1) provides estimates for tonnage (unit: thousand tons), value (unit: million dollars), and ton-miles ... for the base year (2017), the recent years (2018 - 2024), the forecast year estimates (2030 - 2050), and the state level historical trend estimates (1997-2012)". Downloads are zipped regional and state databases (FAF5.7.1.zip and FAF5.7.1_access.zip, the latter presumably Access databases), plus a Data Tabulation Tool, metadata and a FAF zones shapefile. The files were not downloaded, so the CSV/Access formats are inferred from the file names.
+  Licence checked 2026-11-01: DOT's own open data catalog lists "Freight Analysis Framework" (https://data.transportation.gov/d/6tex-3tzx, attribution "FHWA, Office of Freight Management and Operations") with licence "Public Domain U.S. Government" (terms link https://www.usa.gov/government-works). No licence statement appears on faf.ornl.gov itself, and BTS's own FAF page could not be read, so this is catalog metadata rather than a terms page (medium confidence). Also in the issue: BTS's NTAD, which has its own entry, bts-ntad.
