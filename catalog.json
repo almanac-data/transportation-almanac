@@ -41,7 +41,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.transtats.bts.gov/ontime/",
@@ -94,7 +94,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://faf.ornl.gov/faf5/",
@@ -144,7 +144,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://geodata.bts.gov/",
@@ -197,7 +197,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://afdc.energy.gov/data_download",
@@ -247,7 +247,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.eurocontrol.int/dashboard/aviation-data-research",
@@ -302,7 +302,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://ec.europa.eu/eurostat/web/transport/database",
@@ -356,7 +356,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.fhwa.dot.gov/policyinformation/statistics.cfm",
@@ -408,7 +408,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://safetydata.fra.dot.gov/OfficeofSafety/default.aspx",
@@ -461,7 +461,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://data.transportation.gov/browse?category=Public+Transit&q=NTD",
@@ -514,7 +514,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://data-explorer.oecd.org/?fs%5B0%5D=Topic%2C0%7CTransport%23TRA%23&pg=0&fc=Topic",
@@ -567,7 +567,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://datahub.transportation.gov/Automobiles/Fatality-Analysis-Reporting-System-FARS-/mzrg-xkip",
@@ -620,7 +620,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.ntsb.gov/Pages/AviationQueryV2.aspx",
@@ -672,7 +672,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://roadtraffic.dft.gov.uk/",
@@ -725,7 +725,7 @@
       "status_since": "2026-07-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://unctadstat.unctad.org/EN/",
@@ -778,7 +778,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://w3.unece.org/PXWeb2015/pxweb/en/STAT/STAT__40-TRTRANS/",
@@ -831,7 +831,7 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-01",
+        "checked": "2026-11-02",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://data.transportation.gov/",
