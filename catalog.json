@@ -727,6 +727,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111220359/https://www.ntsb.gov/Pages/AviationQueryV2.aspx",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "United States, territories and possessions, and international waters",
         "temporal": "1962-present",
@@ -779,6 +789,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261004071837/https://roadtraffic.dft.gov.uk/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "Great Britain (regions, local authorities, count points)",
         "temporal": "1993-present (national time series shown on the site)",
@@ -832,6 +852,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111221107/https://unctadstat.unctad.org/EN/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "global (UN member states)",
         "temporal": "1980-present (indicator-dependent)",
@@ -885,6 +915,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20250428084909/https://w3.unece.org/PXWeb2015/pxweb/en/STAT/STAT__40-TRTRANS/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2025-04-28",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "UNECE member states (Europe, North America, Central Asia, Caucasus; 56 countries in the road safety tables)",
         "temporal": "varies by table",
@@ -938,6 +978,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111221813/https://data.transportation.gov/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "United States",
         "temporal": "varies by dataset",
