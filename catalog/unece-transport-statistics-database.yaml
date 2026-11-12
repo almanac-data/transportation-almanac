@@ -35,6 +35,13 @@ observed:
   final_url: https://w3.unece.org/PXWeb2015/pxweb/en/STAT/STAT__40-TRTRANS/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20250428084909/https://w3.unece.org/PXWeb2015/pxweb/en/STAT/STAT__40-TRTRANS/
+  authenticity: timestamped
+  permission: ok
+  captured: '2025-04-28'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: UNECE member states (Europe, North America, Central Asia, Caucasus; 56 countries in the road safety tables)
   temporal: varies by table
